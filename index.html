@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greetings App</title>
+  </head>
+  <body>
+    <label for="name-input">Enter your name:</label>
+    <input type="text" id="name-input" />
+    <button onclick="showGreeting()">Say Hello</button>
+    <p id="greeting"></p>
+
+    <script>
+      function showGreeting() {
+        const nameInput = document.getElementById("name-input");
+        const greeting = document.getElementById("greeting");
+
+        greeting.innerText = `Hello, ${nameInput.value}!`;
+      }
+    </script>
+  </body>
+</html>
